@@ -1,5 +1,5 @@
 SELECT 
-    REPLACE(title, 'The', '***')
+    REPLACE(title, 'The ', '***')
 FROM books
 WHERE 
-    SUBSTRING(title, 1, 3) = 'The';
+    LEFT(title, 3) = 'The';
